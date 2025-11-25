@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.logoInstituto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgProjetoPersona {
+  width: 80px;
+  margin-right: 10px;
+}
+.imgCPS {
+  width: 48px;
+}
+.imglampada {
+  width: 30px;
+  margin-left: 10px;
+}

@@ -1,0 +1,36 @@
+# 🧠 Pastas de build e dependências
+node_modules
+dist
+build
+out
+coverage
+
+# 🖼️ Mídia e arquivos binários
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.mp4
+*.mov
+*.avi
+*.webp
+*.mp3
+*.wav
+*.zip
+*.rar
+*.pdf
+
+# ⚙️ Configurações e metadados
+package-lock.json
+yarn.lock
+
+# 🗂️ Pastas do seu projeto que não precisam de formatação
+img/
+assets/
+fonts/
+
+# 🧾 Outros arquivos que o Prettier não deve tocar
+*.min.js
+*.min.css

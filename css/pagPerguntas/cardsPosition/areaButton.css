@@ -1,0 +1,21 @@
+.areaButton {
+  grid-area: button;
+  /*background-color: #ff7fee;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.areaButton button {
+  background-color: #2b2bd1;
+  border: none;
+  color: aliceblue;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: larger;
+  cursor: pointer;
+}
+.areaButton button i {
+  margin-right: 10px;
+}

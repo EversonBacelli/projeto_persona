@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../../img/fundo_final.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 60vh;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}

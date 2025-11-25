@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+header h1 {
+  font-family: arial;
+  margin: 0;
+}
+header h1 span {
+  color: rgb(179, 12, 12);
+}
+header p {
+  width: 40%;
+  margin: 0;
+  text-align: center;
+  font-family: arial;
+  font-size: 18px;
+}

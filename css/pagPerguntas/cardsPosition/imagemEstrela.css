@@ -1,0 +1,40 @@
+.imagemEstrela {
+  grid-area: estrela;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: absolute;
+}
+
+.imagemEstrela #fundo {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.imagemEstrela .persona {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -25%;
+  right: 20px;
+}
+
+.imagemEstrela .persona img {
+  margin-top: 35%;
+  padding: 0;
+  height: 50vh;
+}
+
+@media screen and (max-width: 1073px) {
+  .imagemEstrela #fundo {
+    width: 50%;
+  }
+  .imagemEstrela .persona {
+    width: 50%;
+  }
+}

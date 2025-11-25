@@ -1,0 +1,65 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 120px;
+  position: relative;
+}
+
+.sprite-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  background: #c1cbeb;
+  border-radius: 8px;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.sprite-item {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  background: white;
+  cursor: pointer;
+  transition:
+    transform 0.3s,
+    border 0.3s;
+}
+
+.sprite-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.sprite-item.selected {
+  border: 4px solid #881212;
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  background-color: #fff;
+  color: #9b9b9c;
+  border: none;
+  font-size: 40px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: #fff;
+  color: #201690;
+}
+
+.sprite-gallery {
+  scrollbar-width: none; /* Firefox */
+}
+
+.sprite-gallery::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}

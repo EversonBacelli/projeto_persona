@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../../img/fundo_final.png);
+  padding: 30px;
+  background-position: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(17, 12, 12, 0.1);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+.sidebar {
+  background-color: #c1cbeb;
+  padding: 30px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logoAzul {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.steps {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 40px;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  background: #f88b8b;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.step.active::before {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #201690;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  left: -30px;
+}
+
+.btn-prosseguir {
+  background: #aaa;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.btn-prosseguir.active {
+  background: #201690;
+  cursor: pointer;
+}
+
+.content {
+  padding: 40px;
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.content p {
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #201690;
+  border-radius: 8px;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button-option {
+  background-color: #b8b8b8;
+  color: #363636;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-option:hover {
+  background-color: #1a1279;
+  color: #fff;
+}
+
+.button-option.inactive {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.button-option.active {
+  background-color: #201690;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#btnProximo {
+  background-color: #201690;
+  color: #fff;
+}

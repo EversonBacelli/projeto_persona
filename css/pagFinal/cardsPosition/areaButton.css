@@ -1,0 +1,44 @@
+.areaButton {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.areaButton button {
+  background-color: #010181;
+  width: 300px;
+  border: none;
+  color: aliceblue;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: larger;
+  cursor: pointer;
+}
+.areaButton button i {
+  margin-right: 10px;
+}
+
+.areaButton button:hover {
+  background-color: #32b5da;
+  transition: all ease 0.5s;
+}
+.areaButton button:active {
+  transform: scale(1);
+  transition: all ease 0.3s;
+}
+#btnVoltar {
+  background-color: #6c757d;
+}
+#btnVoltar:hover {
+  background-color: red;
+  transition: all ease 0.5s;
+}
+#btnVoltar:active {
+  transform: scale(1);
+  transition: all ease 0.3s;
+}

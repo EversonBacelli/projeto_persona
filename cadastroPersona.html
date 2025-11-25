@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Persona</title>
+    <link rel="stylesheet" href="./css/Identification/cadastroPersona.css" />
+    <link rel="stylesheet" href="./css/Identification/carrosselSprite.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div>
+          <img src="./img/logoPersonaAzul.png" alt="Logo" class="logoAzul" />
+          <h2>
+            Conte nos mais
+            <br />
+            sobre seu projeto
+          </h2>
+
+          <div class="steps">
+            <div class="step active" id="step1">Identificação</div>
+            <div class="step" id="step2">Informações pessoais</div>
+            <div class="step" id="step3">Sprite</div>
+          </div>
+        </div>
+
+        <button class="btn-prosseguir" id="btnProsseguir" disabled>» PROSSEGUIR</button>
+      </div>
+
+      <!-- Etapa 1 -->
+      <div class="content" id="etapa1">
+        <h1>IDENTIFICAÇÃO DA PERSONA</h1>
+        <label for="objetivo1">Descrição da persona (Qual o trabalho dela?)</label>
+        <textarea id="objetivo1" rows="3" placeholder="Escreva aqui..."></textarea>
+
+        <label>Está vinculado a alguma empresa? (O projeto em sí, não a persona.)</label>
+        <div class="button-group">
+          <button class="button-option empresa-btn" data-valor="sim">Sim</button>
+          <button class="button-option empresa-btn" data-valor="nao">Não</button>
+        </div>
+
+        <label>Status do projeto:</label>
+        <div class="button-group">
+          <button class="button-option status-btn" data-valor="planejamento">Planejamento</button>
+          <button class="button-option status-btn" data-valor="concluido">Concluído</button>
+          <button class="button-option status-btn" data-valor="execucao">Em execução</button>
+          <button class="button-option status-btn" data-valor="pausado">Pausado</button>
+        </div>
+
+        <label>Faixa etária do público alvo:</label>
+        <select id="faixaEtaria1">
+          <option value="">Selecione aqui...</option>
+          <option value="0-12">0-12 anos</option>
+          <option value="13-17">13-17 anos</option>
+          <option value="18-59">18-59 anos</option>
+          <option value="60+">60+ anos</option>
+        </select>
+
+        <div style="text-align: right; margin-top: 30px">
+          <button id="btnProximo1" class="button-option" disabled>PRÓXIMO</button>
+        </div>
+      </div>
+
+      <!-- Etapa 2 -->
+      <div class="content hidden" id="etapa2">
+        <h1>IDENTIFICAÇÃO DA PERSONA</h1>
+        <label for="objetivo2">Funções dessa persona (Como ela trabalha?)</label>
+        <textarea id="objetivo2" rows="1" placeholder="Escreva aqui..."></textarea>
+
+        <label>Estado civil:</label>
+        <div class="button-group">
+          <button class="button-option empresa-btn" data-valor="casado">Casado(a)</button>
+          <button class="button-option empresa-btn" data-valor="solteiro">Solteiro(a)</button>
+          <button class="button-option empresa-btn" data-valor="divorciado">Divorciado(a)</button>
+          <button class="button-option empresa-btn" data-valor="viuvo">Viuvo(a)</button>
+        </div>
+
+        <label>Qual o seu gênero?</label>
+        <div class="button-group">
+          <button class="button-option status-btn" data-valor="feminino">Feminino</button>
+          <button class="button-option status-btn" data-valor="masculino">Masculino</button>
+          <button class="button-option status-btn" data-valor="bigen">Bigenêro</button>
+          <button class="button-option status-btn" data-valor="transexual">Transexual</button>
+          <button class="button-option status-btn" data-valor="agenero">Agenêro</button>
+          <button class="button-option status-btn" data-valor="outros">Outros</button>
+        </div>
+
+        <label>Faixa de renda:</label>
+        <select id="faixaEtaria2">
+          <option value="">Selecione aqui...</option>
+          <option value="1">Um salário mínimo</option>
+          <option value="2-3">Dois a Três salários mínimos</option>
+          <option value="4+">Quatro ou mais salários mínimos</option>
+          <option value="autonomo">Autônomo</option>
+        </select>
+
+        <div style="text-align: right; margin-top: 30px">
+          <button id="btnProximo2" class="button-option" disabled>PRÓXIMO</button>
+        </div>
+      </div>
+
+      <!-- Etapa 3 -->
+      <div class="content hidden" id="etapa3">
+        <h1>ESCOLHA DE SPRITE</h1>
+        <div class="carousel-container">
+          <button class="carousel-btn" onclick="scrollCarousel(-1)"><</button>
+          <div class="sprite-gallery" id="spriteGallery">
+            <div class="sprite-item"><img src="./img/spriteTemp1.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp2.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp3.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp4.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp5.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp6.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp7.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp8.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp9.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp10.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp11.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp12.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp13.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp14.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp15.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp16.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp17.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp18.png" /></div>
+            <div class="sprite-item"><img src="./img/spriteTemp19.png" /></div>
+          </div>
+          <button class="carousel-btn" onclick="scrollCarousel(1)">></button>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px">
+          <button id="btnPronto" class="button-option" disabled>PRONTO! ✔</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/Passar dados/JsonCadastro.js" defer></script>
+  </body>
+</html>

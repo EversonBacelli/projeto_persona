@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Inconsolata:wght@200..900&family=Parkinsans:wght@300..800&family=Permanent+Marker&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* impede rolagem lateral */
+  background-color: aliceblue;
+  color: #111;
+}
+
+.menuNav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  height: 150px;
+  margin-top: 120px;
+}
+
+.menu {
+  text-align: center;
+  border: 3px solid #a00;
+  color: #a00;
+  background: none;
+  margin: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%;
+}
+
+.menu button {
+  color: #111;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  background: none;
+  padding: 10px 10px;
+}
+
+.menu:hover {
+  background-color: #a00;
+  color: #fff;
+}
+
+.menu button:hover {
+  color: #fff;
+}

@@ -1,0 +1,19 @@
+.imagemEstrela {
+  grid-area: estrela;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.imagemEstrela .fundo {
+  position: absolute;
+  height: 70%;
+  aspect-ratio: 1;
+}
+
+.imagemEstrela .persona {
+  position: absolute;
+  height: 55%;
+  margin-top: 8%;
+  margin-right: 2%;
+}

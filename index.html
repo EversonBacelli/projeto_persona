@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Persona</title>
+    <link rel="stylesheet" href="./css/HomePage/style.css" />
+    <link rel="stylesheet" href="./css/HomePage/home.css" />
+    <link rel="stylesheet" href="./css/HomePage/formulario.css" />
+  </head>
+  <body>
+    <!-- Topo -->
+    <header class="topo">
+      <img src="./img/Logo - CPS.png" alt="Logo CPS" class="logoEsq" />
+      <img src="./img/logoPersona.png" alt="Projeto Persona" class="logoCen" />
+    </header>
+
+    <!-- Cards -->
+    <section class="etapas">
+      <div class="etapa">
+        <div class="hex-container">
+          <div class="hex"></div>
+          <img src="./img/garota2.png" alt="Entenda" class="personagem" />
+        </div>
+        <h2>Entenda</h2>
+        <p>
+          <span class="etapSpan">Quem</span>
+          são seus clientes,
+          <span class="etapSpan">o que</span>
+          eles
+          <span class="etapSpan">querem</span>
+          — e
+          <span class="etapSpan">como conquistá-los</span>
+          .
+        </p>
+      </div>
+
+      <div class="etapa">
+        <div class="hex-container">
+          <div class="hex"></div>
+          <img src="./img/garoto3.png" alt="Entenda" class="personagem" />
+        </div>
+        <h2>Receba</h2>
+        <p>
+          Personas
+          <span class="etapSpan">visuais</span>
+          e com
+          <span class="etapSpan">motivaçãoes</span>
+          ,
+          <span class="etapSpan">dores</span>
+          ,
+          <span class="etapSpan">canais de influêcia</span>
+          e mais.
+        </p>
+      </div>
+
+      <div class="etapa">
+        <div class="hex-container">
+          <div class="hex"></div>
+          <img src="./img/garota1.png" alt="Entenda" class="personagem" />
+        </div>
+        <h2>Conheça</h2>
+        <p>
+          Seu
+          <span class="etapSpan">público alvo</span>
+          para
+          <span class="etapSpan">melhores</span>
+          resultados em marketing.
+        </p>
+      </div>
+    </section>
+
+    <!-- NavBar -->
+    <div class="menuNav">
+      <nav class="menu">
+        <button>Desenvolvedores</button>
+        <a href="#forms">
+          <button>Cadastro</button>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Formulário -->
+    <section class="formulario" id="forms">
+      <h2>
+        Comece criando a sua
+        <span class="azul">Persona</span>
+        ...
+      </h2>
+      <p>Olá! Preencha os campos abaixo com suas informações para prosseguirmos.</p>
+
+      <form>
+        <div class="linha">
+          <div class="input-box">
+            <label for="Primeiro nome">Primeiro Nome</label>
+            <input type="text" id="nome" required />
+          </div>
+          <div class="input-box">
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" required />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="input-box">
+          <label for="text">Nome da Persona / Projeto</label>
+          <input type="text" id="nomeprojeto" required />
+        </div>
+
+        <div class="input-box">
+          <label for="text">Categoria</label>
+          <select id="categoria" required>
+            <option disabled selected>Selecione aqui a categoria...</option>
+            <option>Educação</option>
+            <option>Saúde</option>
+            <option>Tecnologia</option>
+            <option>Varejo e Comércio</option>
+            <option>Finanças e Negócios</option>
+            <option>Criatividade e conteúdo</option>
+            <option>Rede Social</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <div class="buttonCriarPersona">
+      <button type="submit" class="botao-criar">CRIAR PERSONA</button>
+    </div>
+  </body>
+
+  <script src="js/Passar dados/JsonIndex.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infográfico</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/pagFinal/InfoGrafico/infografico.css" />
+    <link rel="stylesheet" href="./css/pagFinal/InfoGrafico/nav.css" />
+    <link rel="stylesheet" href="./css/pagFinal/InfoGrafico/areaButton.css" />
+    <link rel="stylesheet" href="./css/pagFinal/InfoGrafico/imprimir.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./img/Logo - Persona.png" alt="Logo do projeto" />
+      </div>
+    </nav>
+
+    <main>
+      <section class="quem">
+        <img class="sprite" src="" alt="" />
+
+        <div class="info">
+          <h2 class="nome"></h2>
+
+          <div class="dados">
+            <p class="profissao"></p>
+            <p class="idade"></p>
+          </div>
+          <p class="descricao"></p>
+        </div>
+      </section>
+      <section class="oqFaz">
+        <div class="info2">
+          <h2 class="funcoes">Funções:</h2>
+          <span class="funcao"></span>
+        </div>
+      </section>
+      <section id="perguntas-container" class="conteudo"></section>
+    </main>
+
+    <div class="areaButton">
+      <button>
+        <i class="fa-solid fa-globe"></i>
+        COMPARTILHAR
+      </button>
+      <button id="btnExportar">
+        <i class="fa-solid fa-file-export"></i>
+        EXPORTAR
+      </button>
+      <button id="btnVoltar" onclick="window.location.href='escolherFinal.html'">
+        <i class="fa-solid fa-arrow-left"></i>
+        VOLTAR
+      </button>
+    </div>
+
+    <script src="/js/Passar dados/JsonFinal.js"></script>
+    <script src="/js/acoes/imprimir.js"></script>
+    <script src="/js/acoes/compartilhar.js"></script>
+  </body>
+</html>

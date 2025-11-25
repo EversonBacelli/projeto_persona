@@ -1,0 +1,13 @@
+.meio {
+  grid-area: meio;
+  /*background-color: rgb(255, 214, 127);*/
+  display: flex;
+  align-items: center;
+}
+
+#card5 {
+  margin-left: 10%;
+
+  height: fit-content;
+  width: fit-content;
+}

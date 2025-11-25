@@ -1,0 +1,32 @@
+.direita {
+  grid-area: direita;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#card6 {
+  margin-left: 10px;
+
+  height: fit-content;
+  width: fit-content;
+}
+
+#card7 {
+  margin-left: 70px;
+
+  height: fit-content;
+  width: fit-content;
+}
+#card8 {
+  margin-left: 50px;
+
+  height: fit-content;
+  width: fit-content;
+}
+#card9 {
+  margin-left: 20px;
+
+  height: fit-content;
+  width: fit-content;
+}

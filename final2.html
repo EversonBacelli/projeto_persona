@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persona</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/pagFinal/nav.css" />
+    <link rel="stylesheet" href="./css/pagFinal/body.css" />
+    <link rel="stylesheet" href="./css/pagFinal/section.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cards.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cardsPosition/areaButton.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cardsPosition/direita.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cardsPosition/esquerda.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cardsPosition/imagemEstrela.css" />
+    <link rel="stylesheet" href="./css/pagFinal/cardsPosition/meio.css" />
+    <link rel="stylesheet" href="./css/pagFinal/imprimir.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logoPersona">
+        <img class="imgProjetoPersona" src="./img/Logo - Persona.png" />
+      </div>
+    </nav>
+    <section>
+      <aside class="sidebar">
+        <h2>Informações da Persona</h2>
+        <div class="infoBox">
+          <div class="faixaEnome">
+            <p>
+              <strong>Nome:</strong>
+              <span id="nomePersonaFinal">a</span>
+            </p>
+            <p>
+              <strong>Faixa:</strong>
+              <span id="faixaPersonaFinal">b</span>
+            </p>
+          </div>
+
+          <div class="descEfuncao">
+            <p>
+              <strong>Descrição:</strong>
+              <span id="descPersonaFinal">c</span>
+            </p>
+            <p>
+              <strong>Função:</strong>
+              <span id="funcaoPersonaFinal">d</span>
+            </p>
+          </div>
+
+          <div class="salarioEcat">
+            <p>
+              <strong>Salário Médio:</strong>
+              <span id="salarioPersonaFinal">e</span>
+            </p>
+            <p>
+              <strong>Categoria:</strong>
+              <span id="categoriaPersonaFinal">f</span>
+            </p>
+          </div>
+
+          <div class="areaButton">
+            <button>
+              <i class="fa-solid fa-globe"></i>
+              COMPARTILHAR
+            </button>
+            <button id="btnExportar">
+              <i class="fa-solid fa-file-export"></i>
+              EXPORTAR
+            </button>
+            <button id="btnVoltar" onclick="window.location.href='escolherFinal.html'">
+              <i class="fa-solid fa-arrow-left"></i>
+              VOLTAR
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="mapaMental">
+        <div class="esquerda">
+          <div class="box">
+            <img src="./img/seta_tracada.png" alt="" />
+            <div class="dadosTitulo">
+              <p id="resp-pensa"></p>
+              <img src="./img/card_oque_pensa.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <img class="setaDireita" src="./img/seta_tracada.png" alt="" />
+            <div class="dadosTitulo">
+              <img src="./img/card_oque_fala.png" alt="" />
+              <p id="resp-fala"></p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="dadosTitulo">
+              <p id="resp-dores"></p>
+              <img src="./img/card_suas dores.png" alt="" />
+            </div>
+            <img class="setaEsquerdaAbaixo" src="./img/seta_tracada.png" alt="" />
+          </div>
+        </div>
+
+        <div class="meio">
+          <div class="box">
+            <img src="./img/seta_tracada.png" alt="" />
+            <div class="dadosTitulo">
+              <p id="resp-escuta"></p>
+              <img src="./img/card_oque_escuta.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="imagemEstrela">
+          <img class="fundo" src="./img/FundoEstrela_AZUL.png" alt="" />
+          <img class="persona" src="./img/moça.png" alt="" />
+        </div>
+
+        <div class="direita">
+          <div class="box">
+            <img class="setaDireita" src="./img/seta_tracada.png" alt="" />
+            <div class="dadosTitulo">
+              <img src="./img/card_oque_ve.png" alt="" />
+              <p id="resp-ve"></p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="dadosTitulo">
+              <img src="./img/card_suas_necessidades.png" alt="" />
+              <p id="resp-necessidades"></p>
+            </div>
+            <img class="setaDireitaAbaixo" src="./img/seta_tracada.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/Passar Dados/JsonFinal2.js"></script>
+    <script src="./js/acoes/compartilhar.js"></script>
+    <script src="./js/acoes/imprimir.js"></script>
+  </body>
+</html>

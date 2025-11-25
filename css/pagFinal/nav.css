@@ -1,0 +1,13 @@
+.logoPersona {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 10vh;
+  position: absolute;
+}
+
+.logoPersona img {
+  width: 100px;
+  padding-right: 20px;
+}

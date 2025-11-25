@@ -1,0 +1,18 @@
+.boxSetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.boxSetas img {
+  height: 75vh;
+  width: 100vh;
+}
+
+@media screen and (max-width: 1073px) {
+  .boxSetas img {
+    height: 75vh;
+    width: 50%;
+  }
+}

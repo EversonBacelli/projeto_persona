@@ -1,0 +1,72 @@
+.cardPerguntasVermelho {
+  background-color: #ffa19f;
+}
+
+.cards {
+  width: 40vh;
+  max-width: 30vh;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+}
+.cards p {
+  margin: 0;
+  text-align: center;
+  color: #f0f8ff;
+  font-family: arial;
+  font-size: 80%;
+  width: 80%;
+  height: 80%;
+}
+
+.pergAzul {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+
+.pergVerm {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardPerguntasVermelho:hover {
+  transform: scale(105%);
+  box-shadow: 1px 2px 5px 1px #000;
+  transition: ease 1s;
+}
+
+.cardPerguntasAzul:hover {
+  transform: scale(105%);
+  box-shadow: 1px 2px 5px 1px #000;
+  transition: ease 1s;
+}
+.resposta {
+  display: flex;
+  color: aliceblue;
+  font-weight: 600;
+  font-family: arial;
+  gap: 10px;
+}
+
+.cardPerguntasAzul {
+  background-color: #929eff;
+}
+
+@media screen and (min-width: 1273px) {
+  .cards {
+    width: 50vh;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+  }
+}

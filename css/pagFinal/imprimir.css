@@ -1,0 +1,40 @@
+@media print {
+  p {
+    font-size: 18pt;
+  }
+
+  button {
+    display: none;
+  }
+
+  .mapaMental {
+    transform: scale(0.8);
+  }
+
+  .imagemEstrela {
+    position: relative;
+    left: 26%;
+    top: 6%;
+  }
+
+  .imagemEstrela .fundo {
+    width: 190%;
+    height: auto;
+  }
+
+  .imagemEstrela .persona {
+    top: 5%;
+    width: 150%;
+    height: auto;
+  }
+
+  .salarioEcat {
+    gap: 20px;
+  }
+}
+
+@page {
+  size: A4 Landscape;
+  margin: 0;
+  padding: 10mm;
+}

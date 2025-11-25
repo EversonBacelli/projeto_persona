@@ -1,0 +1,11 @@
+nav {
+  position: absolute;
+  padding: 0;
+  display: flex;
+  justify-self: right;
+  z-index: 2;
+}
+
+nav .logo img {
+  height: 60px;
+}

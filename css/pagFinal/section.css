@@ -1,0 +1,127 @@
+section {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* evita o scroll global */
+}
+
+/* ===== BARRA LATERAL ===== */
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #010181;
+  height: 100vh; /* limita a altura da sidebar */
+  overflow-y: auto; /* ativa scroll interno nela */
+  box-sizing: border-box; /* evita que padding aumente a altura total */
+}
+
+.sidebar h2 {
+  color: #010181;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  align-self: center;
+}
+
+.sidebar .infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.faixaEnome {
+  display: flex;
+  justify-content: space-between; /* coloca um em cada canto */
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.faixaEnome p {
+  font-size: 1.2rem;
+  color: #010181;
+  margin: 0;
+}
+
+.faixaEnome strong {
+  color: #010181;
+}
+
+#faixaPersonaFinal {
+  background-color: #010181;
+  color: white;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.descEfuncao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0 15px;
+}
+
+.descEfuncao p {
+  font-size: 1.2rem;
+  color: #010181;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.descEfuncao strong {
+  color: #010181;
+}
+
+#descPersonaFinal {
+  background-color: #010181;
+  color: red;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.salarioEcat {
+  display: flex;
+  justify-content: space-between; /* coloca um em cada canto */
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.salarioEcat p {
+  font-size: 1.2rem;
+  color: #010181;
+  margin: 0;
+}
+
+.salarioEcat strong {
+  color: #010181;
+  margin-bottom: 10px;
+}
+
+#salarioPersonaFinal {
+  background-color: #010181;
+  color: lightgreen;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.mapaMental {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 6fr 2fr;
+  grid-template-areas:
+    "esquerda meio direita"
+    "esquerda estrela direita"
+    "esquerda estrela direita";
+  transform: scale(0.8);
+  transform-origin: center top;
+}

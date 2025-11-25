@@ -1,0 +1,186 @@
+@page {
+  size: A3 Portrait;
+  padding: 0;
+  margin: 10mm;
+}
+
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  p,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  div {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    font-size: 18pt !important;
+  }
+
+  h2 {
+    font-size: 22pt !important;
+  }
+}
+
+body {
+  background-image: url("../../../img/fundo_final.png");
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  font-family: "Poppins", sans-serif;
+
+  height: fit-content;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 500px;
+  gap: 10px;
+}
+
+.quem {
+  background-color: #dddddd5e;
+
+  padding: 15px;
+
+  border-radius: 10px;
+  display: flex;
+
+  gap: 50px;
+
+  margin-top: 20px;
+
+  min-width: 900px;
+  max-width: 915px;
+}
+
+.nome {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.idade {
+  font-size: 25px;
+  margin: 0;
+}
+
+.profissao {
+  font-size: 25px;
+  margin: 0;
+}
+
+.descricao {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.oqFaz {
+  background-color: #dddddd5e;
+
+  padding: 15px;
+
+  border-top: #d50a0a 2px solid;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+
+  min-width: 915px;
+  max-width: 915px;
+}
+
+.funcoes {
+  font-size: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  max-width: 600px;
+
+  justify-self: center;
+}
+
+.funcao {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  list-style-position: inside;
+  max-width: 600px;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.dados {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  border-bottom: #d50a0a 2px solid;
+  border-radius: 5px;
+}
+
+.sprite {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+#perguntas-container {
+  background-color: #dddddd5e;
+
+  border-top: #d50a0a 2px solid;
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  min-width: 900px;
+  max-width: 915px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+h3,
+p {
+  margin: 0;
+}

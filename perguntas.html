@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Persona</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/pagPerguntas/header.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/nav.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/section.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsResposta.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsPosition/areaButton.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsPosition/direita.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsPosition/esquerda.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsPosition/imagemEstrela.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/cardsPosition/meio.css" />
+    <link rel="stylesheet" href="./css/pagPerguntas/setas.css" />
+
+    <link rel="stylesheet" href="./css/pagCards/popUp_Cards.css" />
+    <link rel="stylesheet" href="./css/pagCards/questButton.css" />
+    <link rel="stylesheet" href="./css/pagCards/DicaButton.css" />
+  </head>
+  <body>
+    <div class="espacoEscuro"></div>
+    <nav>
+      <div class="logoInstituto">
+        <img class="imglampada" src="./img/Logo - Lâmpada.png" />
+        <img class="imgCPS" src="./img/Logo - CPS.png" />
+      </div>
+      <div class="logoPersona">
+        <img class="imgProjetoPersona" src="./img/Logo - Persona.png" />
+      </div>
+    </nav>
+    <header>
+      <h1>
+        Questionário
+        <span>Dissertativo</span>
+      </h1>
+      <p>Responda as perguntas para a elaboração final da sua persona!</p>
+    </header>
+    <section>
+      <div class="tela"></div>
+      <div class="boxSetas">
+        <img id="setas" src="./img/setas.png" alt="" />
+      </div>
+      <div class="imagemEstrela">
+        <img id="fundo" src="./img/FundoEstrela.png" alt="" />
+        <div class="persona">
+          <img id="principalPersona" src="./img/moça.png" alt="" />
+        </div>
+      </div>
+      <div class="boxCards">
+        <div class="esquerda"></div>
+        <div class="meio"></div>
+        <div class="direita"></div>
+        <div class="areaButton">
+          <a href="#">
+            <button>
+              <i class="fa-solid fa-lock"></i>
+              AVANÇAR
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/automacoes/automatizationCards.js" type="module"></script>
+    <script src="./js/automacoes/popup.js" type="module"></script>
+    <script src="./js/acoes/buttonDica.js" type="module"></script>
+    <script src="js/Passar dados/JsonPerguntas.js"></script>
+  </body>
+</html>

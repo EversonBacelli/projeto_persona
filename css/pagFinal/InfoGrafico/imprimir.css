@@ -1,0 +1,12 @@
+@media print {
+  /* Esconde botões ou coisas desnecessárias */
+  button {
+    display: none;
+  }
+}
+
+@page {
+  size: A3 Landscape;
+  margin: 0;
+  padding: 10mm;
+}

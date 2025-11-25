@@ -1,0 +1,26 @@
+.cardsActive .questButton {
+  background-color: #ae0f0a;
+  border: none;
+  color: aliceblue;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: larger;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  transition: ease all 1s;
+}
+.cardsActive .questButton #lampada {
+  height: 60px;
+  right: -2px;
+  top: -10px;
+  position: absolute;
+}
+
+.cardsActive button i {
+  margin-right: 10px;
+  margin-left: 10px;
+}

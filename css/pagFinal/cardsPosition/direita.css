@@ -1,0 +1,8 @@
+.direita {
+  grid-area: direita;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 60%;
+  gap: 20%;
+}
