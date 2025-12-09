@@ -1,26 +1,37 @@
 import dicas from "../../model/dicas.js";
 
-function buttonHelp(btn) {
-  document.querySelector(".cardsActive").style.paddingBottom = "10%";
-  document.querySelector(".conteudoTemp").style.display = "none";
-  document.querySelector(".btnActivo").style.display = "flex";
+function buttonHelp(btn, perguntaAtual) {
 
-  btn.classList.add("expandida");
-  var dica = dicas[Math.floor(Math.random() * dicas.length)];
-  document.querySelector(".btnActivo .dicas").textContent = dica.dica;
+  const cardsActive = document.querySelector(".cardsActive");
+  const conteudoTemp = document.querySelector(".conteudoTemp");
+  const btnActivo = document.querySelector(".btnActivo");
+  const dicasBox = document.querySelector(".btnActivo .dicas");
 
-  document.querySelector(".boxOpcoes .aceita").addEventListener("click", (e) => {
+  const textarea = document.querySelector(".cardsActive textarea");
+  const aceita = document.querySelector(".boxOpcoes .aceita");
+  const negar = document.querySelector(".boxOpcoes .negar");
+
+   cardsActive.style.paddingBottom = "10%";
+  conteudoTemp.style.display = "none";
+  btnActivo.style.display = "flex";
+
+   const item = dicas.find(v => perguntaAtual.includes(v.pergunta));
+
+   const dica = item?.dica || "Nenhuma dica disponível para esta pergunta.";
+  dicasBox.textContent = dica;
+
+   aceita.onclick = e => {
     e.stopPropagation();
-    document.querySelector(".cardsActive textarea").value = dica.dica;
-  });
+    textarea.value = dica;
+  };
 
-  document.querySelector(".boxOpcoes .negar").addEventListener("click", (e) => {
+   negar.onclick = e => {
     e.stopPropagation();
-    document.querySelector(".conteudoTemp").style.display = "flex";
-    document.querySelector(".btnActivo").style.display = "none";
+    conteudoTemp.style.display = "flex";
+    btnActivo.style.display = "none";
+    cardsActive.style.paddingBottom = "0%";
     btn.classList.remove("expandida");
-    document.querySelector(".cardsActive").style.paddingBottom = "0%";
-  });
+  };
 }
 
 export { buttonHelp };

@@ -13,4 +13,6 @@ body {
 
 p {
   font-size: 18px;
+     max-width: 300px; /* ajuste o tamanho */
+  overflow-wrap: break-word;
 }
